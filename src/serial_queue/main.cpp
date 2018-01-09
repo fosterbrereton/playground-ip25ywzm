@@ -1,10 +1,10 @@
-#include "Exercises/Universe.h"
-
 #include <string>
 #include <vector>
 #include <iostream>
 #include <sstream>
 #include <fstream>
+
+void serial_queue_example();
 
 using namespace std;
 

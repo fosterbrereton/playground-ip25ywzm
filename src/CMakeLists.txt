@@ -1,4 +1,8 @@
-cmake_minimum_required (VERSION 2.6)
-project (universe)
-add_executable(universe src/UniverseTest.cpp src/Exercises/Universe.h src/Exercises/Universe.cpp)
+cmake_minimum_required (VERSION 3.2)
+
+project (serial_queue)
+
+add_executable(serial_queue
+               serial_queue/main.cpp
+               stlab/stlab/concurrency/serial_queue.hpp)
 
