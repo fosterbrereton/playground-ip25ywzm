@@ -1,3 +1,3 @@
 #!/bin/sh
 
-make && ./serial_queue
+make && ./serial_queue_example

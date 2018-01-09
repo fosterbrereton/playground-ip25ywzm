@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include <stlab/concurrency/serial_queue.hpp>
 
 using namespace std;

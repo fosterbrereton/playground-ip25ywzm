@@ -43,6 +43,7 @@ void AssertEquals(int expected, int found, string message) {
 }
 
 int main() {
+#if 0
     try {
         vector<int> galaxy1 {2, 3};
         AssertEquals(5, Universe::CountAllStars(galaxy1), "Running Universe::CountAllStars(2, 3)...");
@@ -73,6 +74,16 @@ int main() {
         Message("Oops! 🐞", e.what());
         Message("Hint 💡", "Did you properly accumulate all stars into 'totalStars'? 🤔");
     }
-
+#else
+    try {
+        serial_queue_example();
+    } catch (const exception& error) {
+        Success(false);
+        Message("Exception", error.what());
+    } catch (...) {
+        Success(false);
+        Message("Exception", "Unknown");
+    }
+#endif
   return 0;
 }
