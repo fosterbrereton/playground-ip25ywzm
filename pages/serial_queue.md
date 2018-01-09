@@ -4,4 +4,4 @@ Hit "Run" to see serial queue in action
 
 # Hands-on Demo
 
-@[Serial Queue Example]({"stubs": ["src/serial_queue/main.cpp"], "command": "sh /project/target/run.sh"})
+@[Serial Queue Example]({"stubs": ["serial_queue/main.cpp"], "command": "sh /project/target/run.sh"})
